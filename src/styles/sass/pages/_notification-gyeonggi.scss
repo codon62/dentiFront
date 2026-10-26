@@ -1,0 +1,74 @@
+.outer_title_box {
+  margin-bottom: 30px;
+}
+.notification_wrap {
+  background-color: #fff;
+}
+.content_container {
+  width: 1180px;
+  padding: 0 60px;
+}
+.teeth_number_container {
+  display: inline-block;
+  width: 212px;
+}
+.content_title {
+  display: flex;
+  align-items: center;
+  color: #767a83;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.35px;
+}
+.content_sub_title {
+  color: #b3b3b3;
+  letter-spacing: -0.35px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.prevent_care_history_wrap_g {
+  padding: 24px 16px 16px;
+  border-radius: 4px;
+  border: solid 1px #e1e2e7;
+  position: relative;
+  .info_label {
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    color: #4a4a4a;
+    font-weight: 700;
+    position: absolute;
+    top: -10px;
+    background-color: #fff;
+    padding: 0 5px;
+    left: 8px;
+  }
+  .part_edit_button {
+    @include box-sizing(border-box);
+
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    background-color: #545f76;
+    width: 156px;
+    height: 48px;
+    letter-spacing: -0.4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    .icon {
+      @include icon();
+
+      margin-right: 6px;
+      background-image: url('#{$asset-img-path}common/ic-signature-24-enabled.png');
+    }
+  }
+}
+.button_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 74px;
+  box-sizing: border-box;
+  border-top: 1px solid #e1e2e6;
+  padding: 0 30px 0 60px;
+}

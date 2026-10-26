@@ -1,0 +1,148 @@
+@charset "UTF-8";
+// privacy-policy page
+
+.privacy-wrap {
+    padding: 0 5px;
+}
+.privacy-wrap p {
+    margin-bottom: 7px;
+}
+.privacy-wrap .privacy-tit {
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
+.privacy-wrap .privacy-txt {
+    padding-top: 15px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+.privacy-wrap .cont-box {
+    @include box-sizing(border-box);
+
+    margin-top: 15px;
+}
+.privacy-wrap .cont-box .cont-list {
+    border: 1px solid #000;
+}
+.privacy-wrap .cont-box .cont-list tr {
+    border-bottom: 1px solid #000;
+}
+.privacy-wrap .cont-box .cont-list tr .list-tit {
+    @include box-sizing(border-box);
+
+    width: 15%;
+    padding: 10px;
+    border-right: 1px solid #000;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+.privacy-wrap .cont-box .cont-list tr .list-tit .sub-tit {
+    display: inline-block;
+    width: calc(100% - 20px);
+}
+.privacy-wrap .cont-box .cont-list tr .list-tit .icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px 5px 0 0;
+    background: #333;
+    vertical-align: top;
+}
+.privacy-wrap .cont-box .cont-list tr .list-tit.full-tit {
+    font-weight: 500;
+}
+.privacy-wrap .cont-box .cont-list tr .list-txt {
+    @include box-sizing(border-box);
+
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+.privacy-wrap .cont-box .cont-list tr .list-txt .sub-txt {
+    display: block;
+    line-height: 20px;
+}
+.privacy-wrap .agree-cont {
+    margin-top: 15px;
+}
+.privacy-wrap .agree-cont .agree-txt {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    line-height: 20px;
+}
+.privacy-wrap .policy-box {
+    @include box-sizing(border-box);
+
+    padding: 15px;
+    border: 1px solid #000;
+}
+.privacy-wrap .policy-box .txt {
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4em;
+}
+.privacy-wrap .policy-box .txt.last-txt {
+    padding: 0;
+}
+.privacy-wrap .policy-box .txt .underline {
+    position: relative;
+}
+.privacy-wrap .policy-box .txt .underline:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.privacy-wrap .policy-wrap {
+    margin-top: 20px;
+}
+.privacy-wrap .policy-wrap .policy-tit {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+}
+.privacy-wrap .policy-wrap .policy-list .list .list-txt {
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+.privacy-wrap .policy-wrap .policy-list .list .list-txt.seq-txt + .list-txt {
+    padding-left: 10px;
+}
+.privacy-wrap .policy-wrap .policy-list .list .list-txt a {
+    position: relative;
+    color: #337ab7;
+}
+.privacy-wrap .policy-wrap .policy-list .list .list-txt a:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.privacy-wrap .policy-wrap .comm__table tr td[rowspan] {
+    border-bottom: 1px solid #cad5e6;
+}
+.privacy-wrap .policy-wrap .comm__table {
+    margin: 10px 0;
+}
+.tr-hover:hover {
+    background-color: #f7faff;
+    cursor: pointer;
+}

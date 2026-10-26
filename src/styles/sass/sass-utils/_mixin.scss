@@ -1,0 +1,91 @@
+@charset "UTF-8";
+// mixin 모음
+
+// internet explorer only
+@mixin ie-only() {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+// PLACEHOLDER
+@mixin placeholder {
+    ::-webkit-input-placeholder {
+        @content;
+    }
+    :-moz-placeholder {
+        @content;
+    }
+    ::-moz-placeholder {
+        @content;
+    }
+    :-ms-input-placeholder {
+        @content;
+    }
+}
+// TRANSITION
+@mixin transition($x...) {
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    -o-transition: $x;
+    transition: $x;
+}
+// OPACITY
+@mixin opacity($value, $important: false) {
+    $ie-value: $value * 100;
+    opacity: $value is-important($important);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=' + $ie-value + ')' is-important($important);
+    filter: alpha(opacity=$ie-value) is-important($important);
+}
+// BORDER-RADIUS
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+// FONT-SMOOTHING
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    } @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+// BOX-SIZING
+@mixin box-sizing($box-model) {
+    -webkit-box-sizing: $box-model; // Safari <= 5
+    -moz-box-sizing: $box-model; // Firefox <= 19
+    box-sizing: $box-model;
+}
+// 텍스트 숨김처리
+@mixin blind() {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+// text ... 으로 숨김처리
+@mixin text_ellipsis() {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+// CJK text 감싸기
+@mixin word_break_wrap($block: '') {
+    word-break: keep-all;
+    word-wrap: break-word;
+    @if $block == block {
+        display: block;
+    }
+}
+// icon 사이즈 설정 mixin
+@mixin icon($size: 24px) {
+  width: $size;
+  height: $size;
+  display: inline-block;
+}

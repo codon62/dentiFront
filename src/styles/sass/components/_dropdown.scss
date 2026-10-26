@@ -1,0 +1,152 @@
+@charset "UTF-8";
+// dropdown
+
+.comm_select {
+    @include transition(all 0.3s ease);
+    @include box-sizing(border-box);
+    @include border-radius(0);
+
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    outline: none;
+    color: #000;
+    font-weight: normal;
+    background: #fff url('#{$asset-img-path}common/bt_drop.png') no-repeat 97% center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.comm_select.read_put {
+    @include opacity(1);
+
+    background-image: none !important;
+}
+// 체크박스로 만든 셀렉트
+.dropdown dd,
+.dropdown dt {
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown ul {
+    margin: -1px 0 0 0;
+}
+.dropdown a,
+.dropdown a:visited {
+    color: #bdbdbd;
+    text-decoration: none;
+    outline: none;
+    font-size: 15px;
+}
+.dropdown dt a {
+    @include box-sizing(border-box);
+    @include border-radius(3px);
+
+    display: block;
+    padding: 8px 20px 5px 10px;
+    min-height: 25px;
+    line-height: 24px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    color: #bdbdbd;
+    font-size: 15px;
+    background: #fff url('#{$asset-img-path}common/select_blit.png') no-repeat 96% center;
+}
+.dropdown dt a span,
+.multiSel span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 3px 2px 0;
+}
+.dropdown dd ul {
+    @include box-sizing(border-box);
+    @include border-radius(10px);
+
+    background-color: #fff;
+    border: 0;
+    color: #343c58;
+    display: none;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    list-style: none;
+    height: 100px;
+    overflow: auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.dropdown span.value {
+    display: none;
+}
+.dropdown dd ul li {
+    padding: 5px;
+    display: block;
+}
+.dropdown dd ul li a:hover {
+    background-color: #fff;
+}
+.dropdown .check_set .label_t {
+    font-weight: 400;
+    color: #343c58;
+    margin-left: 10px;
+}
+.select_box {
+    @include transition(all 0.3s ease);
+    @include box-sizing(border-box);
+    @include border-radius(10px);
+
+    border: 2px solid #4f73a6;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    outline: none;
+    color: #000;
+    font-weight: normal;
+    background: #fff url('#{$asset-img-path}common/bt_drop.png') no-repeat 97% center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.select_box.read_only {
+    @include opacity(1);
+
+    background-image: none !important;
+}
+.select_box_new {
+  @include transition(all 0.3s ease);
+  @include box-sizing(border-box);
+  @include border-radius(0);
+
+  border: 1px solid #e1e2e6;
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  outline: none;
+  color: #767a83;
+  font-size: 14px;
+  letter-spacing: -0.4px;
+  font-weight: normal;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: url('#{$asset-img-path}common/ic-down-34-enabled.png') #fcfcfc no-repeat 95% 50%;
+  &:hover {
+    border-color: #020541;
+    background: url('#{$asset-img-path}common/ic-down-34-hover.png') #fcfcfc no-repeat 95% 50%;
+  }
+}
+.select_box_new.read_only {
+  @include opacity(1);
+
+  cursor: default;
+  border: 1px solid #b3b3b3;
+  color: #b3b3b3;
+  background: url('#{$asset-img-path}common/ic-down-34-disabled.png') #e1e2e6 no-repeat 95% 50%;
+}

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+// css reset
+
+body,
+html {
+    height: 100%;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+    @include font-smoothing(on);
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', 'Noto Sans CK', 'Open Sans', '맑은 고딕', 'AppleSDGothcNeo', 'AppleGothic', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #343c58;
+    letter-spacing: -0.8px;
+}
+body,
+input,
+textarea,
+select,
+button,
+table {
+    font-size: 14px;
+}
+body {
+    position: relative;
+    background-color: #fff;
+    color: #343c58;
+}
+body.s {
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+img,
+fieldset {
+    border: 0;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+em,
+address {
+    font-style: normal;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+strong {
+    font-weight: 600;
+}
+textarea {
+    resize: none;
+}
+* {
+    word-wrap: break-word;
+}
+button,
+input[type='button'] {
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+}
+th,
+td {
+    vertical-align: middle !important;
+}
+
+@include placeholder {
+    @include opacity(1);
+
+    color: #888;
+    font-size: 14px;
+    font-weight: normal;
+}
+select::-ms-expand {
+    display: none;
+}

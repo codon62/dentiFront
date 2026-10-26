@@ -1,0 +1,29 @@
+name: Frontend Baseline CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  production-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Install pinned dependencies
+        run: npm ci --legacy-peer-deps --no-audit --no-fund
+      - name: Build production bundle
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
+        run: npm run build

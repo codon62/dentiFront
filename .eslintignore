@@ -1,0 +1,4 @@
+# eslint 제외 파일들
+
+# public folder js
+/public/js/**

@@ -1,0 +1,429 @@
+@charset "UTF-8";
+// tooth
+
+%common-tooth {
+    // tooth 공통 class
+    @include opacity(0);
+
+    position: absolute;
+}
+.tooth_img {
+    pointer-events: all;
+    position: relative;
+}
+.toothbox .tooth_in {
+    padding: 0 13px 0 13px;
+}
+.all_btn:hover {
+  background-color: #0868f1;
+  color: #fff;
+}
+.tooth {
+  #tooth_01 .tooth_img {
+    background: url('#{$asset-img-path}common/b_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_02 .tooth_img {
+    background: url('#{$asset-img-path}common/c_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_03 .tooth_img {
+    background: url('#{$asset-img-path}common/b_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_04 .tooth_img {
+    background: url('#{$asset-img-path}common/a_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_05 .tooth_img {
+    background: url('#{$asset-img-path}common/d_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_06 .tooth_img {
+    background: url('#{$asset-img-path}common/a_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_01 .tooth_a_1,
+  #tooth_03 .tooth_c_1 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/b_1.png') no-repeat;
+    left: 3px;
+    top: 9px;
+    bottom: 0;
+    width: 31px;
+    height: 90px;
+  }
+  #tooth_01 .tooth_a_2,
+  #tooth_03 .tooth_c_2 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/b_2.png') no-repeat;
+    left: 34px;
+    right: 0;
+    top: 9px;
+    bottom: 0;
+    width: 38px;
+    height: 25px;
+  }
+  #tooth_01 .tooth_a_3,
+  #tooth_03 .tooth_c_3 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/b_3.png') no-repeat;
+    left: 34px;
+    top: 34px;
+    bottom: 0;
+    width: 38px;
+    height: 36px;
+  }
+  #tooth_01 .tooth_a_4,
+  #tooth_03 .tooth_c_4 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/b_4.png') no-repeat;
+    left: 34px;
+    bottom: 11px;
+    width: 38px;
+    height: 28px;
+  }
+  #tooth_01 .tooth_a_5,
+  #tooth_03 .tooth_c_5 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/b_5.png') no-repeat;
+    right: 3px;
+    top: 10px;
+    width: 35px;
+    height: 91px;
+  }
+  #tooth_02 .tooth_b_1 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/c_1.png') no-repeat;
+    left: 23px;
+    top: 19px;
+    bottom: 0;
+    width: 13px;
+    height: 86px;
+  }
+  #tooth_02 .tooth_b_2 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/c_2.png') no-repeat;
+    left: 36px;
+    right: 0;
+    top: 4px;
+    bottom: 0;
+    width: 38px;
+    height: 33px;
+  }
+  #tooth_02 .tooth_b_3 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/c_3.png') no-repeat;
+    left: 36px;
+    top: 37px;
+    bottom: 0;
+    width: 38px;
+    height: 36px;
+  }
+  #tooth_02 .tooth_b_4 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/c_4.png') no-repeat;
+    left: 36px;
+    bottom: 3px;
+    width: 38px;
+    height: 34px;
+  }
+  #tooth_02 .tooth_b_5 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/c_5.png') no-repeat;
+    right: 23px;
+    top: 18px;
+    width: 13px;
+    height: 86px;
+  }
+  #tooth_04 .tooth_d_1,
+  #tooth_06 .tooth_f_1 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/a_1.png') no-repeat;
+    left: 3px;
+    top: 9px;
+    bottom: 0;
+    width: 35px;
+    height: 91px;
+  }
+  #tooth_04 .tooth_d_2,
+  #tooth_06 .tooth_f_2 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/a_2.png') no-repeat;
+    left: 38px;
+    right: 0;
+    top: 11px;
+    bottom: 0;
+    width: 38px;
+    height: 28px;
+  }
+  #tooth_04 .tooth_d_3,
+  #tooth_06 .tooth_f_3 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/a_3.png') no-repeat;
+    left: 38px;
+    top: 40px;
+    bottom: 0;
+    width: 38px;
+    height: 40px;
+  }
+  #tooth_04 .tooth_d_4,
+  #tooth_06 .tooth_f_4 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/a_4.png') no-repeat;
+    left: 38px;
+    bottom: 6px;
+    width: 38px;
+    height: 28px;
+  }
+  #tooth_04 .tooth_d_5,
+  #tooth_06 .tooth_f_5 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/a_5.png') no-repeat;
+    right: -1px;
+    top: 10px;
+    width: 35px;
+    height: 91px;
+  }
+  #tooth_05 .tooth_e_1 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/d_1.png') no-repeat;
+    left: 23px;
+    top: 6px;
+    bottom: 0;
+    width: 18px;
+    height: 85px;
+  }
+  #tooth_05 .tooth_e_2 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/d_2.png') no-repeat;
+    left: 36px;
+    right: 0;
+    top: 3px;
+    bottom: 0;
+    width: 38px;
+    height: 34px;
+  }
+  #tooth_05 .tooth_e_3 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/d_3.png') no-repeat;
+    left: 36px;
+    top: 37px;
+    bottom: 0;
+    width: 38px;
+    height: 36px;
+  }
+  #tooth_05 .tooth_e_4 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/d_4.png') no-repeat;
+    left: 36px;
+    bottom: 3px;
+    width: 38px;
+    height: 34px;
+  }
+  #tooth_05 .tooth_e_5 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/d_5.png') no-repeat;
+    right: 23px;
+    top: 6px;
+    width: 13px;
+    height: 85px;
+  }
+}
+.tooth2 {
+  #tooth_01 .tooth_img {
+    background: url('#{$asset-img-path}common/b2_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_02 .tooth_img {
+    background: url('#{$asset-img-path}common/c2_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_03 .tooth_img {
+    background: url('#{$asset-img-path}common/b2_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_04 .tooth_img {
+    background: url('#{$asset-img-path}common/a2_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_05 .tooth_img {
+    background: url('#{$asset-img-path}common/d2_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_06 .tooth_img {
+    background: url('#{$asset-img-path}common/a2_none.png') no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+  #tooth_01 .tooth_a_1,
+  #tooth_03 .tooth_c_1 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/b2_1.png') no-repeat;
+    left: 13px;
+    top: 8px;
+    bottom: 0;
+    width: 80px;
+    height: 26px;
+  }
+  #tooth_01 .tooth_a_2,
+  #tooth_03 .tooth_c_2 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/b2_2.png') no-repeat;
+    left: 3px;
+    right: 0;
+    top: 35px;
+    bottom: 0;
+    width: 104px;
+    height: 36px;
+  }
+  #tooth_01 .tooth_a_3,
+  #tooth_03 .tooth_c_3 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/b2_3.png') no-repeat;
+    left: 3px;
+    top: 71px;
+    bottom: 0;
+    width: 104px;
+    height: 31px;
+  }
+  #tooth_02 .tooth_b_1 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/c2_1.png') no-repeat;
+    left: 27px;
+    top: 2px;
+    bottom: 0;
+    width: 57px;
+    height: 34px;
+  }
+  #tooth_02 .tooth_b_2 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/c2_2.png') no-repeat;
+    left: 22px;
+    right: 0;
+    top: 37px;
+    bottom: 0;
+    width: 66px;
+    height: 36px;
+  }
+  #tooth_02 .tooth_b_3 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/c2_3.png') no-repeat;
+    left: 22px;
+    top: 74px;
+    bottom: 0;
+    width: 65px;
+    height: 34px;
+  }
+  #tooth_04 .tooth_d_1,
+  #tooth_06 .tooth_f_1 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/a2_1.png') no-repeat;
+    left: 3px;
+    top: 8px;
+    bottom: 0;
+    width: 105px;
+    height: 31px;
+  }
+  #tooth_04 .tooth_d_2,
+  #tooth_06 .tooth_f_2 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/a2_2.png') no-repeat;
+    left: 3px;
+    right: 0;
+    top: 39px;
+    bottom: 0;
+    width: 104px;
+    height: 37px;
+  }
+  #tooth_04 .tooth_d_3,
+  #tooth_06 .tooth_f_3 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/a2_3.png') no-repeat;
+    left: 16px;
+    top: 77px;
+    bottom: 0;
+    width: 80px;
+    height: 26px;
+  }
+  #tooth_05 .tooth_e_1 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/d2_1.png') no-repeat;
+    left: 23px;
+    top: 3px;
+    bottom: 0;
+    width: 65px;
+    height: 34px;
+  }
+  #tooth_05 .tooth_e_2 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/d2_2.png') no-repeat;
+    left: 23px;
+    right: 0;
+    top: 38px;
+    bottom: 0;
+    width: 65px;
+    height: 36px;
+  }
+  #tooth_05 .tooth_e_3 {
+    @extend %common-tooth;
+
+    background: url('#{$asset-img-path}common/d2_3.png') no-repeat;
+    left: 27px;
+    top: 74px;
+    bottom: 0;
+    width: 56px;
+    height: 34px;
+  }
+}
+$list: a, b, c, d, e, f;
+@each $val in $list {
+    @for $i from 1 through 5 {
+        .tooth_#{$val}_#{$i}.on,
+        .tooth_hover .tooth_#{$val}_#{$i}:hover {
+            @include opacity(1, true);
+        }
+    }
+}

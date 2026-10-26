@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="title" content="덴티아이" />
+  <title>덴티아이</title>
+  <link rel="icon" href="<%= BASE_URL %>favicon.png">
+  <script> // 깃플챗 연동
+  window.GitpleConfig = {
+    appCode: 'vobT5lNwX4hdkpqMs1yQbOwAgJ3863' // 워크스페이스 `설정 > 앱 관리 > 연동` 메뉴에서 앱코드 복사
+  };
+  !function(){function e(){function e(){var e=t.contentDocument,a=e.createElement("script");a.type="text/javascript",a.async=!0,a.src=window[n]&&window[n].url?window[n].url+"/inapp-web/gitple-loader.js":"https://app.gitple.io/inapp-web/gitple-loader.js",a.charset="UTF-8",e.head&&e.head.appendChild(a)}var t=document.getElementById(a);t||((t=document.createElement("iframe")).id=a,t.style.display="none",t.style.width="0",t.style.height="0",t.addEventListener?t.addEventListener("load",e,!1):t.attachEvent?t.attachEvent("onload",e):t.onload=e,document.body.appendChild(t))}var t=window,n="GitpleConfig",a="gitple-loader-frame";if(!window.Gitple){document;var i=function(){i.ex&&i.ex(arguments)};i.q=[],i.ex=function(e){i.processApi?i.processApi.apply(void 0,e):i.q&&i.q.push(e)},window.Gitple=i,t.attachEvent?t.attachEvent("onload",e):t.addEventListener("load",e,!1)}}();
+  Gitple('boot'); // 로그인 사용자라면 아래 추가 정보 부분을 확인
+  </script>
+</head>
+<body>
+<div id="app"></div>
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if (agent.indexOf('msie') != -1) {
+		document.getElementById('app').innerHTML = '\
+			<div id="header">\
+				<header>\
+					<div class="header__gnb">\
+						<div class="header__inner maxWidth"></div>\
+					</div>\
+				</header>\
+			</div>\
+			<div id="container">\
+				<div class="container_wrap">\
+					<div class="content__area bg__form_ver">\
+						<div class="sub__content form__ver_1 mt30">\
+							<div class="browser__con bg_white mt20 tac" style="width: 800px;margin: 0 auto;padding: 50px;box-sizing: border-box;">\
+								<div class="iconbox"><img src="/src/assets/images/sub/ic_security.png"></div>\
+								<p class="commp3 mt15 fwb">프로그램 설치</p>\
+								<p class="commp mt15">안전한 서비스 이용을 위해 <br>아래와 같은 프로그램 설치를 확인해 주세요.</p>\
+								<div class="linebox mt30" style="border: 1px solid #ccc;;padding: 20px;box-sizing: border-box;">\
+									<p class="sscommp c_gray2 fw300">* 컴퓨터 성능에 따라 10초 ~ 1분정도 소요될 수 있습니다. <br>* 사용자 환경에 따라 오류 메세지가 발생할 경우, 다운로드 안내창에서 ‘저장’을 눌러 PC에서 다운로드를 진행해 주세요.</p>\
+									<p class="sscommp c_gray2 fwn mt15">전산화시스템(Denti-i)은 IE(익스플로러)로 사용할 경우 일부기능의 사용이 어려울 수 있어 구글 크롬 브라우저 사용을 부탁드립니다.</p>\
+								</div>\
+								<p class="commp2 mt50 fwb">크롬 브라우저 설치 방법</p>\
+								<p class="commp mt20">1. 포털사이트 ‘크롬’ 검색   >  구글 크롬 접속 (www.google.com/chrome)   >   chrome 다운로드   >   동의 및 설치</p>\
+								<p class="commp mt10">2. 설치관리의 ‘다운로드’ 버튼 클릭   >  구글 크롬 접속(www.goole.com/chrome)   >   chrome 다운로드   >  동의 및 설치</p>\
+								<div class="iconbox mt30"><img src="/src/assets/images/sub/img_chrome.png"></div>\
+								<p class="commp fwb">Chrome 브라우저</p>\
+								<div class="tac mt30">\
+									<a href="https://www.google.com/chrome/" class="d_inblock comm__blue_btn btn_m_size2 wid110">다운로드</a>\
+								</div>\
+								<p class="sscommp mt15 c_blue fwn">설치가 완료된 후, 크롬 브라우저를 통한 덴티아이 시스템 이용을 부탁드립니다.</p>\
+							</div>\
+						</div>\
+					</div>\
+				</div>\
+			</div>'
+	}
+</script>
+<!-- built files will be auto injected -->
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="<%= BASE_URL %>js/html2canvas.min.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fee7be4a1eaff580954062eafed77e02&libraries=services"></script>
+</body>
+</html>

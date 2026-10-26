@@ -1,0 +1,11 @@
+@charset "UTF-8";
+// 위치 : src/assets/scss/import/_index.scss
+// 설명 : 각 요소에 적용될 SCSS를 한곳에 모아서 관리함
+@import "https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700";
+
+@import "sass-utils/_all.scss";
+@import "base/_all.scss";
+@import "components/_all.scss";
+@import "layout/_all.scss";
+@import "pages/_all.scss";

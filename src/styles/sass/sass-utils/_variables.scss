@@ -1,0 +1,9 @@
+@charset "UTF-8";
+// 변수모음
+
+$asset-img-path: "~@/assets/images/";
+
+// important
+@function is-important($important){
+    @return #{if($important, '!important', '')};
+}

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+// sidebar
+
+.left__menu {
+    @include box-sizing(border-box);
+
+    width: 200px;
+    float: left;
+    background-color: #fff;
+}
+.container_wrap.left__menuset .left__menu {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 100%;
+}
+
+//left profile
+.left__menu .l__top {
+    padding: 10px 20px;
+}
+.my_img {
+    @include transition(all 0.7s ease);
+    @include opacity(0);
+    @include border-radius(60px);
+
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+}
+.my_img.on,
+.my__profile .commp2.on {
+    @include opacity(1);
+
+    top: 0;
+}
+.my__profile .commp2 {
+    @include transition(all 0.3s ease);
+    @include opacity(0);
+
+    top: 50px;
+}
+
+// left menu list
+.menu__list {
+    @include box-sizing(border-box);
+
+    border-top: 1px solid #dbdbdb;
+}
+.menu__list .lnb__list > li > a,
+.menu__list .lnb__list > li > span {
+    @include transition(all 0.3s ease);
+    @include box-sizing(border-box);
+
+    position: relative;
+    line-height: 55px;
+    padding: 0 22px;
+    background-color: #fff;
+    height: 55px;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+}
+.menu__list .lnb__list > li.on > a:before,
+.menu__list .lnb__list > li.on > span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 7px;
+    height: 55px;
+    background-color: #0868f1;
+}
+.menu__list .lnb__list > li:hover a,
+.menu__list .lnb__list > li:hover span {
+    background-color: #f7faff;
+}
+.menu__list .lnb__list > li > span {
+    cursor: pointer;
+    position: relative;
+}
+.menu__list .lnb__list li.on > a {
+    background-color: #f7faff !important;
+    color: #0868f1 !important;
+    font-weight: bold;
+    padding-left: 56px;
+}
+.menu__list .lnb__list li.on > span {
+    background-color: #f7faff !important;
+    color: #0868f1 !important;
+    font-weight: bold;
+    padding-left: 56px;
+}
+.menu__list .lnb__list > li img {
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.menu__list .lnb__list .sub__lnb {
+    background-color: #fff;
+}
+.menu__list .lnb__list .sub__lnb li {
+    margin: 15px 0;
+}
+.menu__list .lnb__list .sub__lnb li a {
+    @include box-sizing(border-box);
+
+    background-color: #fff;
+    color: #343c58;
+    font-size: 15px;
+    padding-left: 56px;
+}
+.menu__list .lnb__list .sub__lnb li a:hover,
+.menu__list .lnb__list .sub__lnb li a.on {
+    color: #0868f1;
+}
+.lnb__list > li.on img {
+    display: none;
+}
+.lnb__list .l_menu1.on a {
+    background: url('#{$asset-img-path}common/lnb_icon1_on.png') no-repeat 22px center;
+}
+.lnb__list .l_menu2.on a {
+    background: url('#{$asset-img-path}common/lnb_icon2_on.png') no-repeat 22px center;
+}
+.lnb__list .l_menu3.on a {
+    background: url('#{$asset-img-path}common/lnb_icon3_on.png') no-repeat 22px center;
+}
+.lnb__list .l_menu4.on a {
+    background: url('#{$asset-img-path}common/lnb_icon4_on.png') no-repeat 22px center;
+}
+.lnb__list .l_menu5.on a {
+    background: url('#{$asset-img-path}common/lnb_icon5_on.png') no-repeat 22px center;
+}
+.lnb__list .l_menu6.on span {
+    background: url('#{$asset-img-path}common/lnb_icon6_on.png') no-repeat 22px center;
+}
+.lnb__list .l_menu7.on a {
+    background: url('#{$asset-img-path}common/ic_agreement_black_on.png') no-repeat 22px center;
+}
+.lnb__list .l_menu8.on a {
+    background: url('#{$asset-img-path}common/lnb_icon8_on.png') no-repeat 22px center;
+}
+.lnb__list .l2_menu2.on span {
+    background: url('#{$asset-img-path}common/lnb2_icon2_on.png') no-repeat 22px center;
+}
+.lnb__list .l2_menu3.on span {
+    background: url('#{$asset-img-path}common/lnb2_icon3_on.png') no-repeat 22px center;
+}
+.lnb__list .l2_menu4.on span {
+    background: url('#{$asset-img-path}common/lnb2_icon4_on.png') no-repeat 22px center;
+}
+.lnb__list .l2_menu4_2.on a {
+    background: url('#{$asset-img-path}common/lnb2_icon4_on.png') no-repeat 22px center;
+}
+.lnb__list .l2_menu5.on span {
+    background: url('#{$asset-img-path}common/lnb_icon5_on.png') no-repeat 22px center;
+}

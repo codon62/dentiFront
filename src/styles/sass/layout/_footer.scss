@@ -1,0 +1,35 @@
+@charset "UTF-8";
+// footer
+
+#footer {
+    @include box-sizing(border-box);
+
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+.footer_wrap {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+}
+#footer .f_link {
+    @include box-sizing(border-box);
+    
+    text-align: right;
+    overflow: hidden;
+    padding: 0 40px;
+}
+.f_link a {
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 5px;
+    line-height: 1;
+    color: #343c58;
+    font-weight: normal;
+}
+.f_link a:last-child {
+    border-left: 1px solid #343c58;
+}
+.f_link a:first-child {
+    border-left: none !important;
+}

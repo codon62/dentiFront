@@ -1,0 +1,27 @@
+@charset "UTF-8";
+// statistics page
+
+.statistics table tr td em {
+    @include box-sizing(border-box);
+
+    display: block;
+    padding: 5px 0;
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+}
+.statistics table tr td em.no1 {
+    background: #6fb5e7;
+}
+.statistics table tr td em.no2 {
+    background: #ea6470;
+}
+.statistics table tr td em.no3 {
+    background: #acacac;
+}
+.statistics table tr td em.no4 {
+    background: #74c3a4;
+}
+.statistics table tr td em.no5 {
+    background: #f3dc01;
+}
